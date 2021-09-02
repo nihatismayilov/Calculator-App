@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/calculator7"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="@+id/calculatorClear"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorClear" />
+
+    <TextView
+        android:id="@+id/calculatorInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black1"
+        android:textSize="64sp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/calculatorClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <Button
+        android:id="@+id/calculator1"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/calculator4"
+        app:layout_constraintTop_toBottomOf="@+id/calculator4" />
+
+    <Button
+        android:id="@+id/calculator2"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator1"
+        app:layout_constraintStart_toEndOf="@+id/calculator1" />
+
+    <Button
+        android:id="@+id/calculator3"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator2"
+        app:layout_constraintStart_toEndOf="@+id/calculator2" />
+
+    <Button
+        android:id="@+id/calculator4"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/calculator7"
+        app:layout_constraintTop_toBottomOf="@+id/calculator7" />
+
+    <Button
+        android:id="@+id/calculator5"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator4"
+        app:layout_constraintStart_toEndOf="@+id/calculator4" />
+
+    <Button
+        android:id="@+id/calculator6"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator5"
+        app:layout_constraintStart_toEndOf="@+id/calculator5" />
+
+    <Button
+        android:id="@+id/calculatorClear"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/gray"
+        android:text="AC"
+        android:textColor="@color/black1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculatorPlusMinus"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black1"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="+/-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorClear"
+        app:layout_constraintStart_toEndOf="@+id/calculatorClear" />
+
+    <Button
+        android:id="@+id/calculatorPercent"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black1"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorPlusMinus"
+        app:layout_constraintStart_toEndOf="@+id/calculatorPlusMinus" />
+
+    <Button
+        android:id="@+id/calculatorDivide"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="÷"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorPercent"
+        app:layout_constraintStart_toEndOf="@+id/calculatorPercent" />
+
+    <Button
+        android:id="@+id/calculator8"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator7"
+        app:layout_constraintStart_toEndOf="@+id/calculator7" />
+
+    <Button
+        android:id="@+id/calculator9"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator8"
+        app:layout_constraintStart_toEndOf="@+id/calculator8" />
+
+    <Button
+        android:id="@+id/calculatorMultiply"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="×"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator9"
+        app:layout_constraintStart_toEndOf="@+id/calculator9" />
+
+    <Button
+        android:id="@+id/calculatorMinus"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator6"
+        app:layout_constraintStart_toEndOf="@+id/calculator6" />
+
+    <Button
+        android:id="@+id/calculatorPlus"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator3"
+        app:layout_constraintStart_toEndOf="@+id/calculator3" />
+
+    <Button
+        android:id="@+id/calculator0"
+        android:layout_width="176dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/calculator1"
+        app:layout_constraintTop_toBottomOf="@+id/calculator1" />
+
+    <Button
+        android:id="@+id/calculatorDot"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text=","
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculator0"
+        app:layout_constraintStart_toEndOf="@+id/calculator0" />
+
+    <Button
+        android:id="@+id/calculatorEqual"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="="
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorDot"
+        app:layout_constraintStart_toEndOf="@+id/calculatorDot" />
+</android.support.constraint.ConstraintLayout>
